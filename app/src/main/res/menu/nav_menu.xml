@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn = "navigation_view">
+
+    <group
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/nav_home"
+            android:title="Home"/>
+
+        <item
+            android:id="@+id/nav_genre"
+            android:icon="@drawable/ic_library"
+            android:title="Thể loại"/>
+        <item
+            android:id="@+id/nav_fav"
+            android:icon="@drawable/nav_favorite"
+            android:title="Danh sách truyện yêu thích"/>
+
+        <item
+            android:id="@+id/nav_switch"
+            android:title="Night Mode" />
+
+    </group>
+
+
+
+    <item
+        android:title="">
+        <menu>
+            <item
+                android:id="@+id/nav_login"
+                android:icon="@drawable/nav_login"
+                android:title="Login"/>
+        </menu>
+
+    </item>
+
+</menu>

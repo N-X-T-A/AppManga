@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="130dp"
+            android:layout_height="145dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_launcher_background" />
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="131dp"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        style="@style/titleColor"
+        android:textSize="18sp"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:scrollHorizontally="true"
+        android:fontFamily="@font/poppins_semibold"/>
+
+    <TextView
+        android:id="@+id/authorTextView"
+        android:layout_width="131dp"
+        android:layout_height="wrap_content"
+        android:text="sub title"
+        style="@style/subTitleColor"
+        android:textSize="16sp"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:scrollHorizontally="true"
+        android:fontFamily="@font/poppins_regular"/>
+
+</LinearLayout>
